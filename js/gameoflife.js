@@ -3,10 +3,14 @@ function seed(...args) {
   return arr;
 }
 
-function same([x, y], [j, k]) {}
+function same([x, y], [j, k]) {
+  return JSON.stringify(arguments[0]) === JSON.stringify(arguments[1]);
+}
 
 // The game state to search for `cell` is passed as the `this` value of the function.
-function contains(cell) {}
+function contains(cell) {
+  
+}
 
 const printCell = (cell, state) => {};
 
