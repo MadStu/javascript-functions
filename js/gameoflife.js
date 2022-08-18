@@ -1,4 +1,7 @@
-function seed() {}
+function seed(...args) {
+  const arr = Array.prototype.slice.call(arguments);
+  return arr;
+}
 
 function same([x, y], [j, k]) {}
 
